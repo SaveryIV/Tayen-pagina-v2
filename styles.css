@@ -353,6 +353,7 @@ body {
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .product-card {
@@ -360,6 +361,7 @@ body {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
+  max-width: 350px;
   transition: var(--transition);
 }
 
@@ -370,13 +372,77 @@ body {
 .product-image {
   width: 100%;
   height: 16rem;
+  position: relative;
   overflow: hidden;
 }
+
+/* .product-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: contain;
+} */
+
 
 .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  position: absolute;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.product-image img.active {
+  opacity: 1;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.carousel-btn.prev { left: 0.5rem; }
+.carousel-btn.next { right: 0.5rem; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.35rem;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.25);
+  transition: background 0.2s;
+}
+
+.carousel-dot.active {
+  background: rgba(0,0,0,0.6);
 }
 
 .product-content {
@@ -784,7 +850,7 @@ body {
   }
 
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
   }
 
   .impact-flow {
@@ -831,7 +897,7 @@ body {
   }
 
   .products-grid {
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
   .metrics-grid {

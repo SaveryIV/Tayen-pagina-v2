@@ -1,481 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TAYEN - Tanques de Agua con Impacto Social</title>
-  <meta name="description" content="Tanques de agua de calidad que aseguran tu futuro y ayudan a llevar agua limpia a las comunidades Wichí. El 15% de cada venta apoya a comunidades indígenas en Argentina.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container header-content">
-      <a href="#" class="logo">TAYEN</a>
-      
-      <nav class="nav" id="nav">
-        <a href="#products" class="nav-link">Productos</a>
-        <a href="#impact" class="nav-link">Impacto</a>
-        <a href="#about" class="nav-link">Acerca de</a>
-        <a href="#contact" class="nav-link">Contacto</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAYEN - Tanques de Agua con Impacto Social</title>
+    <meta
+      name="description"
+      content="Tanques de agua de calidad que aseguran tu futuro y ayudan a llevar agua limpia a las comunidades Wichí. El 15% de cada venta apoya a comunidades indígenas en Argentina."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header-content">
+        <a href="#" class="logo">TAYEN</a>
+
+        <nav class="nav" id="nav">
+          <a href="#products" class="nav-link">Productos</a>
+          <a href="#impact" class="nav-link">Impacto</a>
+          <a href="#about" class="nav-link">Acerca de</a>
+          <a href="#contact" class="nav-link">Contacto</a>
+        </nav>
+
+        <a href="#quote" class="btn btn-primary">Obtener Cotización</a>
+
+        <button
+          class="mobile-menu-btn"
+          id="mobile-menu-btn"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+      <nav class="mobile-nav-content">
+        <a href="#products" class="mobile-nav-link">Productos</a>
+        <a href="#impact" class="mobile-nav-link">Impacto</a>
+        <a href="#about" class="mobile-nav-link">Acerca de</a>
+        <a href="#contact" class="mobile-nav-link">Contacto</a>
+        <a
+          href="#quote"
+          class="btn btn-primary"
+          style="width: 100%; margin-top: 1rem"
+          >Obtener Cotización</a
+        >
       </nav>
-
-      <a href="#quote" class="btn btn-primary">Obtener Cotización</a>
-      
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
-  </header>
 
-  <!-- Mobile Nav Overlay -->
-  <div class="mobile-nav" id="mobile-nav">
-    <nav class="mobile-nav-content">
-      <a href="#products" class="mobile-nav-link">Productos</a>
-      <a href="#impact" class="mobile-nav-link">Impacto</a>
-      <a href="#about" class="mobile-nav-link">Acerca de</a>
-      <a href="#contact" class="mobile-nav-link">Contacto</a>
-      <a href="#quote" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Obtener Cotización</a>
-    </nav>
-  </div>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-bg">
-        <img src="/placeholder.svg?height=800&width=1600" alt="Water tanks and community" class="hero-image">
-        <div class="hero-overlay"></div>
-      </div>
-      
-      <div class="container hero-content">
-        <h1 class="hero-title">Tanques de agua que aseguran tu futuro — y el futuro de otras familias</h1>
-        <p class="hero-description">Fabricamos tanques de agua duraderos y destinamos el 15% de cada venta a llevar agua limpia a las comunidades Wichí.</p>
-        
-        <div class="hero-buttons">
-          <a href="#products" class="btn btn-primary btn-lg">
-            Ver Productos
-            <svg class="icon-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
-          <a href="#impact" class="btn btn-outline btn-lg">Nuestro Impacto</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem/Solution Section -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="content-center">
-          <h2 class="section-title">El Acceso al Agua es un Desafío en Argentina</h2>
-          <p class="section-description">Miles de familias en comunidades rurales e indígenas carecen de acceso confiable a agua limpia. Al mismo tiempo, hogares y empresas necesitan soluciones de almacenamiento de agua confiables. TAYEN une estos desafíos — proporcionando tanques de agua de calidad a nuestros clientes mientras garantiza que las comunidades vulnerables reciban la infraestructura de agua que necesitan.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Por Qué Elegir TAYEN</h2>
-          <p class="section-subtitle">Productos de calidad con impacto social medible</p>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-bg">
+          <img
+            src="/placeholder.svg?height=800&width=1600"
+            alt="Water tanks and community"
+            class="hero-image"
+          />
+          <div class="hero-overlay"></div>
         </div>
 
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Tanques de Agua de Alta Calidad y Duraderos</h3>
-            <p class="feature-description">Construidos para durar con materiales premium y estándares de calidad rigurosos para confiabilidad a largo plazo.</p>
-          </div>
+        <div class="container hero-content">
+          <h1 class="hero-title">
+            Tanques de agua que aseguran tu futuro — y el futuro de otras
+            familias
+          </h1>
+          <p class="hero-description">
+            Fabricamos tanques de agua duraderos y destinamos el 15% de cada
+            venta a llevar agua limpia a las comunidades Wichí.
+          </p>
 
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary btn-lg">
+              Ver Productos
+              <svg
+                class="icon-arrow"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </div>
-            <h3 class="feature-title">15% de Ingresos para Impacto Social</h3>
-            <p class="feature-description">Cada compra contribuye directamente a proporcionar infraestructura de agua limpia a las comunidades Wichí.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 20V10M12 20V4M6 20v-6"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Reportes de Impacto Transparentes</h3>
-            <p class="feature-description">Compartimos actualizaciones regulares sobre familias alcanzadas, tanques donados y comunidades apoyadas.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="6" width="20" height="12" rx="2"/>
-                <path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
-              </svg>
-            </div>
-            <h3 class="feature-title">Fabricación Local</h3>
-            <p class="feature-description">Orgullosamente hechos en Argentina con prácticas de producción responsables y experiencia local.</p>
+            </a>
+            <a href="#impact" class="btn btn-outline btn-lg">Nuestro Impacto</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Products Section -->
-    <section id="products" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Nuestros Productos</h2>
-          <p class="section-subtitle">Soluciones de almacenamiento de agua duraderas para cada necesidad</p>
-        </div>
-
-        <div class="products-grid">
-          <div class="product-card">
-            <div class="product-image">
-              <img src="/placeholder.svg?height=300&width=400" alt="500L Water Tank">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Tanque de Agua 500L</h3>
-              <p class="product-capacity">500 Litros</p>
-              <p class="product-description">Ideal para hogares pequeños, jardines o almacenamiento de agua de respaldo. Compacto y fácil de instalar.</p>
-            </div>
-            <div class="product-footer">
-              <a href="#quote" class="btn btn-primary btn-full">Solicitar Cotización</a>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="/placeholder.svg?height=300&width=400" alt="1000L Water Tank">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Tanque de Agua 1000L</h3>
-              <p class="product-capacity">1000 Litros</p>
-              <p class="product-description">Perfecto para hogares de tamaño mediano y pequeños negocios. La opción más popular para familias.</p>
-            </div>
-            <div class="product-footer">
-              <a href="#quote" class="btn btn-primary btn-full">Solicitar Cotización</a>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="/placeholder.svg?height=300&width=400" alt="2000L Water Tank">
-            </div>
-            <div class="product-content">
-              <h3 class="product-name">Tanque de Agua 2000L</h3>
-              <p class="product-capacity">2000 Litros</p>
-              <p class="product-description">Diseñado para propiedades más grandes, hogares rurales y aplicaciones comerciales que requieren alta capacidad.</p>
-            </div>
-            <div class="product-footer">
-              <a href="#quote" class="btn btn-primary btn-full">Solicitar Cotización</a>
-            </div>
+      <!-- Problem/Solution Section -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="content-center">
+            <h2 class="section-title">
+              El Acceso al Agua es un Desafío en Argentina
+            </h2>
+            <p class="section-description">
+              Miles de familias en comunidades rurales e indígenas carecen de
+              acceso confiable a agua limpia. Al mismo tiempo, hogares y
+              empresas necesitan soluciones de almacenamiento de agua
+              confiables. TAYEN une estos desafíos — proporcionando tanques de
+              agua de calidad a nuestros clientes mientras garantiza que las
+              comunidades vulnerables reciban la infraestructura de agua que
+              necesitan.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Impact Model Section -->
-    <section id="impact" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Cómo Tu Compra Crea Impacto</h2>
-          <p class="section-subtitle">El impacto no es un extra: está integrado directamente en nuestro modelo de negocio. Cada tanque que compras financia automáticamente el acceso a agua limpia para comunidades Wichí.</p>
-        </div>
-
-        <div class="impact-flow">
-          <div class="impact-step">
-            <div class="impact-icon impact-icon-primary">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-              </svg>
-            </div>
-            <h3 class="impact-step-title">Tú Compra</h3>
-            <p class="impact-step-description">Compra un tanque de agua de calidad</p>
-          </div>
-
-          <svg class="impact-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-
-          <div class="impact-step">
-            <div class="impact-icon impact-icon-accent">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M19 5v14M5 5v14M9 5v14M15 5v14"/>
-                <path d="M19 5 5 19"/>
-              </svg>
-            </div>
-            <h3 class="impact-step-title">15% Asignado</h3>
-            <p class="impact-step-description">Los ingresos se dedican a la donación</p>
-          </div>
-
-          <svg class="impact-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-
-          <div class="impact-step">
-            <div class="impact-icon impact-icon-accent">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              </svg>
-            </div>
-            <h3 class="impact-step-title">Tanque Fabricado</h3>
-            <p class="impact-step-description">Producimos tanques de donación</p>
-          </div>
-
-          <svg class="impact-arrow" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-
-          <div class="impact-step">
-            <div class="impact-icon impact-icon-primary">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </div>
-            <h3 class="impact-step-title">Comunidades Reciben</h3>
-            <p class="impact-step-description">Entregamos a familias</p>
-          </div>
-        </div>
-
-        <div class="impact-emphasis">
-          <div class="impact-box">
-            <div class="impact-box-icon">💧</div>
-            <div class="impact-box-content">
-              <h4 class="impact-box-title">Integrado en Cada Venta</h4>
-              <p class="impact-box-text">Esto no es un botón de donación o caridad opcional. Es nuestro modelo de negocio central. Cuando eliges TAYEN, automáticamente proporcionas acceso a agua limpia a comunidades indígenas — sin pasos adicionales requeridos.</p>
-            </div>
-          </div>
-
-          <div class="impact-metrics-grid">
-            <div class="impact-metric-card">
-              <div class="impact-metric-value">100%</div>
-              <p class="impact-metric-label">Impacto garantizado con cada compra</p>
-            </div>
-            <div class="impact-metric-card">
-              <div class="impact-metric-value">15%</div>
-              <p class="impact-metric-label">Ingresos dedicados a la donación</p>
-            </div>
-            <div class="impact-metric-card">
-              <div class="impact-metric-value">Directo</div>
-              <p class="impact-metric-label">Transparencia, impacto medible</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Impact Metrics Section -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Impacto en Números</h2>
-          <p class="section-subtitle">Resultados reales de nuestro compromiso con el acceso a agua limpia</p>
-        </div>
-
-        <div class="metrics-grid">
-          <div class="metric">
-            <div class="metric-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <div class="metric-value">850+</div>
-            <div class="metric-label">Familias Alcanzadas</div>
-          </div>
-
-          <div class="metric">
-            <div class="metric-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              </svg>
-            </div>
-            <div class="metric-value">320+</div>
-            <div class="metric-label">Tanques donados</div>
-          </div>
-
-          <div class="metric">
-            <div class="metric-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div class="metric-value">45+</div>
-            <div class="metric-label">Comunidades Ayudadas</div>
-          </div>
-
-          <div class="metric">
-            <div class="metric-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-              </svg>
-            </div>
-            <div class="metric-value">640K+</div>
-            <div class="metric-label">Litros de Agua Segura</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="content-center">
+      <!-- Features Section -->
+      <section id="features" class="section">
+        <div class="container">
           <div class="section-header">
-            <h2 class="section-title">Sobre TAYEN</h2>
+            <h2 class="section-title">Por Qué Elegir TAYEN</h2>
+            <p class="section-subtitle">
+              Productos de calidad con impacto social medible
+            </p>
           </div>
 
-          <p class="about-text">TAYEN fue fundada con la creencia de que el negocio puede ser una fuerza para el bien sin sacrificar calidad o profesionalismo. Fabricamos tanques de agua que nuestros clientes pueden depender, mientras garantizamos que comunidades que lo necesitan reciban la misma infraestructura de calidad.</p>
-
-          <div class="about-grid">
-            <div class="about-item">
-              <h3 class="about-item-title">Nuestra Misión</h3>
-              <p class="about-item-text">Proveer soluciones de agua duraderas mientras garantizamos el acceso a agua limpia para comunidades vulnerables.</p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3 class="feature-title">
+                Tanques de Agua de Alta Calidad y Duraderos
+              </h3>
+              <p class="feature-description">
+                Construidos para durar con materiales premium y estándares de
+                calidad rigurosos para confiabilidad a largo plazo.
+              </p>
             </div>
-            <div class="about-item">
-              <h3 class="about-item-title">Nuestra Visión</h3>
-              <p class="about-item-text">Un futuro donde ninguna comunidad en Argentina viva sin acceso a agua segura.</p>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3 class="feature-title">15% de Ingresos para Impacto Social</h3>
+              <p class="feature-description">
+                Cada compra contribuye directamente a proporcionar
+                infraestructura de agua limpia a las comunidades Wichí.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M18 20V10M12 20V4M6 20v-6" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Reportes de Impacto Transparentes</h3>
+              <p class="feature-description">
+                Compartimos actualizaciones regulares sobre familias alcanzadas,
+                tanques donados y comunidades apoyadas.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="6" width="20" height="12" rx="2" />
+                  <path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" />
+                </svg>
+              </div>
+              <h3 class="feature-title">Fabricación Local</h3>
+              <p class="feature-description">
+                Orgullosamente hechos en Argentina con prácticas de producción
+                responsables y experiencia local.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Testimonials Section -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Lo que dicen las personas</h2>
+      <!-- Products Section -->
+      <section id="products" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <p class="section-subtitle">
+              Soluciones de almacenamiento de agua duraderas para cada necesidad
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/tanque 500lt. arena.jpeg"
+                  alt="500L arena"
+                  class="active"
+                />
+                <img
+                  src="assets/tanque 500lt. gris-blanco.jpeg"
+                  alt="500L gris-blanco"
+                />
+                <button class="carousel-btn prev" aria-label="Anterior">
+                  &#8249;
+                </button>
+                <button class="carousel-btn next" aria-label="Siguiente">
+                  &#8250;
+                </button>
+                <div class="carousel-dots"></div>
+              </div>
+              <div class="product-content">
+                <h3 class="product-name">Tanque de Agua 500L</h3>
+                <p class="product-capacity">500 Litros</p>
+                <p class="product-description">
+                  Ideal para hogares pequeños, jardines o almacenamiento de agua
+                  de respaldo. Compacto y fácil de instalar.
+                </p>
+              </div>
+              <div class="product-footer">
+                <a href="#quote" class="btn btn-primary btn-full"
+                  >Solicitar Cotización</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <svg class="testimonial-quote" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
-              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+      <!-- Impact Model Section -->
+      <section id="impact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Cómo Tu Compra Crea Impacto</h2>
+            <p class="section-subtitle">
+              El impacto no es un extra: está integrado directamente en nuestro
+              modelo de negocio. Cada tanque que compras financia
+              automáticamente el acceso a agua limpia para comunidades Wichí.
+            </p>
+          </div>
+
+          <div class="impact-flow">
+            <div class="impact-step">
+              <div class="impact-icon impact-icon-primary">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path
+                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                  />
+                </svg>
+              </div>
+              <h3 class="impact-step-title">Tú Compra</h3>
+              <p class="impact-step-description">
+                Compra un tanque de agua de calidad
+              </p>
+            </div>
+
+            <svg
+              class="impact-arrow"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-            <p class="testimonial-text">La calidad de nuestro tanque TAYEN superó las expectativas. Saber que nuestra compra ayuda a otras familias a acceder a agua limpia lo hace aún más significativo.</p>
-            <div class="testimonial-author">
-              <p class="testimonial-name">María González</p>
-              <p class="testimonial-role">Propietaria, Buenos Aires</p>
-            </div>
-          </div>
 
-          <div class="testimonial-card">
-            <svg class="testimonial-quote" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/>
-              <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
+            <div class="impact-step">
+              <div class="impact-icon impact-icon-accent">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M19 5v14M5 5v14M9 5v14M15 5v14" />
+                  <path d="M19 5 5 19" />
+                </svg>
+              </div>
+              <h3 class="impact-step-title">15% Asignado</h3>
+              <p class="impact-step-description">
+                Los ingresos se dedican a la donación
+              </p>
+            </div>
+
+            <svg
+              class="impact-arrow"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-            <p class="testimonial-text">Our community received three water tanks from TAYEN. For the first time, we have reliable access to clean water. This changes everything for our children.</p>
-            <div class="testimonial-author">
-              <p class="testimonial-name">Roberto López</p>
-              <p class="testimonial-role">Community Representative, Wichí Nation</p>
+
+            <div class="impact-step">
+              <div class="impact-icon impact-icon-accent">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                  />
+                </svg>
+              </div>
+              <h3 class="impact-step-title">Tanque Fabricado</h3>
+              <p class="impact-step-description">
+                Producimos tanques de donación
+              </p>
+            </div>
+
+            <svg
+              class="impact-arrow"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+
+            <div class="impact-step">
+              <div class="impact-icon impact-icon-primary">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <h3 class="impact-step-title">Comunidades Reciben</h3>
+              <p class="impact-step-description">Entregamos a familias</p>
+            </div>
+          </div>
+
+          <div class="impact-emphasis">
+            <div class="impact-box">
+              <div class="impact-box-icon">💧</div>
+              <div class="impact-box-content">
+                <h4 class="impact-box-title">Integrado en Cada Venta</h4>
+                <p class="impact-box-text">
+                  Esto no es un botón de donación o caridad opcional. Es nuestro
+                  modelo de negocio central. Cuando eliges TAYEN,
+                  automáticamente proporcionas acceso a agua limpia a
+                  comunidades indígenas — sin pasos adicionales requeridos.
+                </p>
+              </div>
+            </div>
+
+            <div class="impact-metrics-grid">
+              <div class="impact-metric-card">
+                <div class="impact-metric-value">100%</div>
+                <p class="impact-metric-label">
+                  Impacto garantizado con cada compra
+                </p>
+              </div>
+              <div class="impact-metric-card">
+                <div class="impact-metric-value">15%</div>
+                <p class="impact-metric-label">
+                  Ingresos dedicados a la donación
+                </p>
+              </div>
+              <div class="impact-metric-card">
+                <div class="impact-metric-value">Directo</div>
+                <p class="impact-metric-label">
+                  Transparencia, impacto medible
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Final CTA Section -->
-    <section id="quote" class="section cta-section">
+      <!-- Impact Metrics Section -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Impacto en Números</h2>
+            <p class="section-subtitle">
+              Resultados reales de nuestro compromiso con el acceso a agua
+              limpia
+            </p>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path
+                    d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                  />
+                </svg>
+              </div>
+              <div class="metric-value">850+</div>
+              <div class="metric-label">Familias Alcanzadas</div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                  />
+                </svg>
+              </div>
+              <div class="metric-value">320+</div>
+              <div class="metric-label">Tanques donados</div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="metric-value">45+</div>
+              <div class="metric-label">Comunidades Ayudadas</div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                </svg>
+              </div>
+              <div class="metric-value">640K+</div>
+              <div class="metric-label">Litros de Agua Segura</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="content-center">
+            <div class="section-header">
+              <h2 class="section-title">Sobre TAYEN</h2>
+            </div>
+
+            <p class="about-text">
+              TAYEN fue fundada con la creencia de que el negocio puede ser una
+              fuerza para el bien sin sacrificar calidad o profesionalismo.
+              Fabricamos tanques de agua que nuestros clientes pueden depender,
+              mientras garantizamos que comunidades que lo necesitan reciban la
+              misma infraestructura de calidad.
+            </p>
+
+            <div class="about-grid">
+              <div class="about-item">
+                <h3 class="about-item-title">Nuestra Misión</h3>
+                <p class="about-item-text">
+                  Proveer soluciones de agua duraderas mientras garantizamos el
+                  acceso a agua limpia para comunidades vulnerables.
+                </p>
+              </div>
+              <div class="about-item">
+                <h3 class="about-item-title">Nuestra Visión</h3>
+                <p class="about-item-text">
+                  Un futuro donde ninguna comunidad en Argentina viva sin acceso
+                  a agua segura.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <!-- <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Lo que dicen las personas</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <svg
+                class="testimonial-quote"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
+                />
+                <path
+                  d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+                />
+              </svg>
+              <p class="testimonial-text">
+                La calidad de nuestro tanque TAYEN superó las expectativas.
+                Saber que nuestra compra ayuda a otras familias a acceder a agua
+                limpia lo hace aún más significativo.
+              </p>
+              <div class="testimonial-author">
+                <p class="testimonial-name">María González</p>
+                <p class="testimonial-role">Propietaria, Buenos Aires</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <svg
+                class="testimonial-quote"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
+                />
+                <path
+                  d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+                />
+              </svg>
+              <p class="testimonial-text">
+                Our community received three water tanks from TAYEN. For the
+                first time, we have reliable access to clean water. This changes
+                everything for our children.
+              </p>
+              <div class="testimonial-author">
+                <p class="testimonial-name">Roberto López</p>
+                <p class="testimonial-role">
+                  Community Representative, Wichí Nation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ -->
+      <!-- Final CTA Section -->
+      <section id="quote" class="section cta-section">
+        <div class="container">
+          <div class="content-center">
+            <h2 class="cta-title">
+              Elige un tanque que dure. Ayuda a traer agua a donde se necesita
+              hoy.
+            </h2>
+            <a href="#contact" class="btn btn-primary btn-lg"
+              >Obtener Cotización
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
       <div class="container">
-        <div class="content-center">
-          <h2 class="cta-title">Elige un tanque que dure. Ayuda a traer agua a donde se necesita hoy.</h2>
-          <a href="#contact" class="btn btn-primary btn-lg">Obtener Cotización
-            
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3 class="footer-title">TAYEN</h3>
+            <p class="footer-text">Tanques de calidad con impacto social.</p>
+          </div>
 
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3 class="footer-title">TAYEN</h3>
-          <p class="footer-text">Tanques de calidad con impacto social.</p>
-        </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Contacto</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <span>+54 9 3878-444130</span>
+              </div>
+            </div>
+          </div>
 
-        <div class="footer-col">
-          <h4 class="footer-heading">Contacto</h4>
-          <div class="footer-contact">
-            <div class="footer-contact-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              <span>+54 9 3874-416040</span>
-            </div>
-            <div class="footer-contact-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              <span>info@tayen.com.ar</span>
-            </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Enlaces Rápidos</h4>
+            <nav class="footer-nav">
+              <a href="#products" class="footer-link">Productos</a>
+              <a href="#impact" class="footer-link">Nuestro Impacto</a>
+              <a href="#about" class="footer-link">Acerca de</a>
+            </nav>
           </div>
         </div>
 
-        <div class="footer-col">
-          <h4 class="footer-heading">Enlaces Rápidos</h4>
-          <nav class="footer-nav">
-            <a href="#products" class="footer-link">Productos</a>
-            <a href="#impact" class="footer-link">Nuestro Impacto</a>
-            <a href="#about" class="footer-link">Acerca de</a>
-          </nav>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-heading">Síguenos</h4>
-          <div class="footer-social">
-            <a href="#" class="footer-social-link" aria-label="Facebook">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-              </svg>
-            </a>
-            <a href="#" class="footer-social-link" aria-label="Instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-            </a>
-            <a href="#" class="footer-social-link" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                <rect x="2" y="9" width="4" height="12"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
-          </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> TAYEN. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
+    </footer>
 
-      <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> TAYEN. Todos los derechos reservados.</p>
-        <div class="footer-legal">
-          <a href="#" class="footer-link">Políticas de Privacidad</a>
-          <a href="#" class="footer-link">Términos de Servicio</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

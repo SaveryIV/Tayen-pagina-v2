@@ -92,3 +92,31 @@ cards.forEach((card) => {
   card.style.transition = "opacity 0.6s ease, transform 0.6s ease"
   observer.observe(card)
 })
+
+document.querySelectorAll('.product-image').forEach(container => {
+  const imgs = container.querySelectorAll('img');
+  const dotsContainer = container.querySelector('.carousel-dots');
+  let current = 0;
+
+  // Crear dots dinámicamente
+  imgs.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.classList.add('carousel-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.carousel-dot');
+
+  function goTo(index) {
+    imgs[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (index + imgs.length) % imgs.length;
+    imgs[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  container.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
+  container.querySelector('.next').addEventListener('click', () => goTo(current + 1));
+});
